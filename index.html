@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Penthouse 27 · 6 Yam Suf</title>
+<meta name="description" content="Penthouse 27 at 6 Yam Suf, Ramat Eshkol, Jerusalem. 192 m² (2,067 sq ft), 55 m² sukkah terrace, 6 bedrooms, top floor. Sold directly by the developer, Safrin.">
+<meta property="og:title" content="Penthouse 27 · 6 Yam Suf · Ramat Eshkol, Jerusalem">
+<meta property="og:description" content="2,067 sq ft · 592 sq ft sukkah terrace · 6 bedrooms · 7th and top floor · Shabbos elevator">
+<meta property="og:image" content="img/tour-cover.webp">
+<link rel="icon" type="image/webp" href="img/logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Figtree:wght@400;500;600&family=Frank+Ruhl+Libre:wght@300;400;500&family=Assistant:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* Layout concept: a cinematic scroll — full-screen chapters that stack like film frames
+   (THE PENTHOUSE · THE ARRIVAL · THE BUILDING · LIVING SPACES · THE SUKKAH TERRACE · INNER SANCTUM),
+   then a quiet dossier: price, plan, gallery, tour, neighborhood, contact. Night palette, champagne gold, large legible type.
+   Bilingual: EN (LTR, Cormorant + Figtree) and HE (RTL, Frank Ruhl Libre + Assistant). */
+:root{
+  color-scheme:dark;
+  --night:#0b0d12; --night-2:#12151c; --panel:#171b23;
+  --ivory:#f6f1e7; --ivory-2:#dbd4c6; --mute:#a8a192;
+  --gold:#d6bd8a; --gold-2:#efdcae;
+  --rule:rgba(246,241,231,.16);
+  --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --sans:"Figtree","Segoe UI",system-ui,sans-serif;
+  --track:.3em; --track-s:.18em; --caps:uppercase;
+  --gutter:clamp(18px,5vw,80px);
+}
+html[lang="he"]{
+  --serif:"Frank Ruhl Libre",Georgia,"Times New Roman",serif;
+  --sans:"Assistant","Segoe UI",system-ui,sans-serif;
+  --track:.12em; --track-s:.06em; --caps:none;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;background:var(--night)}
+body{background:var(--night);color:var(--ivory);font-family:var(--sans);font-weight:400;font-size:1.2rem;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+html[lang="he"] body{font-size:1.25rem}
+body.lock{overflow:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--serif);font-weight:300;line-height:1.08;text-wrap:balance;color:#fff}
+p{color:var(--ivory-2);max-width:60ch}
+.wrap{padding-inline:var(--gutter);max-width:1400px;margin-inline:auto}
+.kicker{font-size:.8rem;letter-spacing:var(--track);text-transform:var(--caps);color:var(--gold);font-weight:600}
+html[lang="he"] .kicker{font-size:.95rem}
+.kicker.rule::after{content:"";display:block;width:44px;height:1px;background:var(--gold);margin-top:16px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:17px 34px;border:1px solid var(--gold);color:var(--gold-2);font-weight:600;letter-spacing:var(--track-s);text-transform:var(--caps);font-size:.86rem;transition:.3s;cursor:pointer;background:rgba(11,13,18,.35);font-family:inherit;backdrop-filter:blur(4px)}
+html[lang="he"] .btn{font-size:1rem}
+.btn:hover{background:var(--gold);color:var(--night)}
+.btn.solid{background:var(--gold);color:var(--night)}
+.btn.solid:hover{background:var(--gold-2)}
+section.block{padding-block:clamp(80px,11vh,140px);position:relative;background:var(--night);z-index:2}
+bdi{unicode-bidi:isolate}
+
+/* nav */
+nav{position:fixed;inset-inline:0;top:0;z-index:90;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:calc(16px + env(safe-area-inset-top,0px)) var(--gutter) 16px;background:linear-gradient(180deg,rgba(11,13,18,.85),rgba(11,13,18,0));transition:.4s}
+nav.solid{background:rgba(11,13,18,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--rule)}
+nav .brand{display:flex;align-items:center;gap:14px;white-space:nowrap}
+nav .brand img{width:42px;height:42px;border-radius:50%;object-fit:cover;background:#fff}
+nav .brand b{display:block;font-family:var(--serif);font-weight:400;font-size:1.35rem;line-height:1.1;letter-spacing:.04em}
+nav .brand small{display:block;font-size:.72rem;letter-spacing:var(--track-s);text-transform:var(--caps);color:var(--gold);font-weight:600}
+nav .right{display:flex;align-items:center;gap:clamp(14px,3vw,30px);white-space:nowrap}
+nav .cta{font-size:.8rem;letter-spacing:var(--track-s);text-transform:var(--caps);font-weight:600;color:var(--gold-2);border-bottom:1px solid var(--gold);padding-bottom:4px}
+html[lang="he"] nav .cta{font-size:.98rem}
+nav .cta:hover{color:#fff;border-color:#fff}
+nav .lang{font-size:.9rem;font-weight:600;color:#fff;border:1px solid rgba(255,255,255,.5);padding:7px 14px;border-radius:999px;cursor:pointer;background:rgba(11,13,18,.4);font-family:var(--sans)}
+nav .lang:hover{border-color:var(--gold);color:var(--gold-2)}
+@media(max-width:600px){nav .brand small{display:none}nav .brand b{font-size:1.1rem}nav .brand img{width:34px;height:34px}nav .cta{display:none}nav .lang{padding:6px 12px}}
+
+/* chapters: stacked full-screen frames */
+#film{position:relative;z-index:1}
+.chapter{position:sticky;top:0;height:100vh;height:100svh;min-height:600px;overflow:hidden;background:var(--night);display:flex;align-items:flex-end}
+.chapter img.bg,.chapter video.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.04);transition:transform 10s linear;will-change:transform}
+.chapter video.bg{transform:none;transition:none;background:#000}
+#top .bg,#top .scrim{will-change:opacity}
+.chapter.on img.bg{transform:scale(1)}
+.chapter .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,13,18,.55) 0%,rgba(11,13,18,.1) 30%,rgba(11,13,18,.12) 44%,rgba(11,13,18,.74) 66%,rgba(11,13,18,.96) 100%)}
+.chapter .inner{position:relative;z-index:1;width:100%;padding:0 var(--gutter) clamp(48px,9vh,110px);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:end;text-shadow:0 2px 24px rgba(0,0,0,.6)}
+.chapter .kicker{color:var(--gold-2)}
+.chapter h2,.chapter h1{font-size:clamp(2.6rem,6.2vw,5.6rem);margin:16px 0 18px}
+.chapter h1{font-size:clamp(3rem,7.4vw,6.8rem)}
+.chapter p{font-size:clamp(1.18rem,1.65vw,1.5rem);color:#fff;max-width:46ch;line-height:1.55}
+.chapter .facts{display:grid;gap:18px;font-family:var(--serif);color:#fff;border-inline-start:1px solid rgba(255,255,255,.4);padding-inline-start:26px;min-width:200px}
+.chapter .facts b{display:block;font-weight:300;font-size:clamp(1.9rem,2.7vw,2.7rem);line-height:1}
+.chapter .facts span{font-family:var(--sans);font-size:.8rem;letter-spacing:var(--track-s);text-transform:var(--caps);color:var(--gold-2);font-weight:600;display:block;margin-top:6px}
+html[lang="he"] .chapter .facts span{font-size:.95rem}
+.chapter .facts i{font-style:normal;color:var(--ivory-2);font-family:var(--sans);font-size:.92rem;display:block}
+.chapter .idx{position:absolute;top:calc(84px + env(safe-area-inset-top,0px));inset-inline-end:var(--gutter);font-family:"Cormorant Garamond",serif;font-size:1.05rem;letter-spacing:.3em;color:var(--gold-2);z-index:1}
+.chapter .cta-row{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap}
+.chapter .scroll{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);font-size:.72rem;letter-spacing:var(--track);text-transform:var(--caps);color:var(--mute);z-index:1}
+.chapter .scroll::after{content:"";display:block;width:1px;height:34px;background:linear-gradient(var(--gold),transparent);margin:8px auto 0}
+@media(max-width:760px){.chapter .inner{grid-template-columns:1fr;gap:22px}.chapter .facts{border-inline-start:0;padding-inline-start:0;border-top:1px solid rgba(255,255,255,.35);padding-top:18px;grid-template-columns:repeat(3,1fr);gap:10px}.chapter .facts b{font-size:1.7rem}.chapter .facts i{display:none}.chapter .cta-row .btn{flex:1}}
+
+/* price strip */
+#price{position:relative;z-index:2;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding-block:34px;background:var(--night-2)}
+#price .row{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px 40px}
+#price .amount{font-family:var(--serif);font-size:clamp(2rem,3.6vw,3rem);font-weight:300;color:#fff;font-variant-numeric:tabular-nums}
+#price .amount small{font-family:var(--sans);font-size:.8rem;letter-spacing:var(--track);text-transform:var(--caps);color:var(--gold);font-weight:600;margin-inline-end:18px}
+#price ul{display:flex;flex-wrap:wrap;gap:12px 32px;list-style:none;color:var(--ivory-2);font-size:1.1rem}
+#price li b{color:#fff;font-weight:600}
+
+/* plan + specs */
+#plan .grid{display:grid;grid-template-columns:7fr 5fr;gap:clamp(32px,5vw,88px);align-items:start}
+#plan .board{position:relative;border:1px solid var(--rule);background:#fff;cursor:zoom-in}
+#plan .board img{width:100%}
+#plan .board .cap{position:absolute;bottom:0;inset-inline:0;padding:12px 16px;font-size:.82rem;letter-spacing:var(--track-s);text-transform:var(--caps);color:var(--ivory-2);background:rgba(11,13,18,.88)}
+#plan h2{font-size:clamp(2.2rem,4vw,3.6rem);margin:16px 0 28px}
+#plan table{width:100%;border-collapse:collapse;font-size:1.12rem}
+#plan th,#plan td{text-align:start;padding:14px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+#plan th{font-weight:400;color:var(--mute);width:40%}
+#plan td{color:#fff;font-weight:500;font-variant-numeric:tabular-nums}
+#plan .note{font-size:.95rem;color:var(--mute);margin-top:20px}
+@media(max-width:900px){#plan .grid{grid-template-columns:1fr}}
+
+/* gallery */
+#gallery{background:var(--night-2)}
+#gallery .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:40px}
+#gallery figure{aspect-ratio:4/3;overflow:hidden;cursor:zoom-in;background:#000;position:relative}
+#gallery img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+#gallery figure:hover img{transform:scale(1.03)}
+#gallery figcaption{position:absolute;inset-inline:0;bottom:0;padding:14px 16px;background:linear-gradient(transparent,rgba(11,13,18,.9));font-size:.98rem;color:#fff}
+@media(max-width:860px){#gallery .grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){#gallery .grid{grid-template-columns:1fr}}
+#lightbox{position:fixed;inset:0;background:rgba(5,6,9,.97);z-index:200;display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+#lightbox.on{display:flex}
+#lightbox img{max-width:100%;max-height:100%;object-fit:contain}
+
+/* tour */
+#tour{padding:0}
+#tour .card{position:relative;height:clamp(420px,76vh,820px);background:#000 url(img/living2.webp) center/cover;cursor:pointer;display:flex;align-items:center;justify-content:center;overflow:hidden}
+#tour .card::before{content:"";position:absolute;inset:0;background:rgba(11,13,18,.64);transition:.4s}
+#tour .card:hover::before{background:rgba(11,13,18,.52)}
+#tour .inner{position:relative;z-index:1;text-align:center;padding:0 var(--gutter);max-width:820px}
+#tour .play{width:96px;height:96px;margin:0 auto 26px;display:block;transition:.4s}
+#tour .card:hover .play{transform:scale(1.06)}
+#tour h2{font-size:clamp(2.2rem,4.6vw,4rem);margin:16px 0 18px}
+#tour p{margin:0 auto;color:#fff;font-size:1.22rem}
+#tour .alt{padding:16px var(--gutter);font-size:1rem;color:var(--mute);text-align:center;border-bottom:1px solid var(--rule)}
+#tour .alt a{color:var(--gold-2);border-bottom:1px solid currentColor}
+#tourmodal{position:fixed;inset:0;z-index:300;background:#000;display:none}
+#tourmodal.on{display:block}
+#tourmodal iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+#tourmodal .close{position:absolute;top:calc(14px + env(safe-area-inset-top,0px));inset-inline-end:14px;z-index:2;width:48px;height:48px;border-radius:50%;border:1px solid #fff;background:rgba(0,0,0,.72);color:#fff;font-size:1.3rem;cursor:pointer;display:grid;place-items:center}
+#tourmodal .tag{position:absolute;top:calc(22px + env(safe-area-inset-top,0px));inset-inline-start:20px;z-index:2;background:rgba(0,0,0,.72);padding:8px 14px;font-size:.8rem;letter-spacing:var(--track-s);text-transform:var(--caps);color:#fff}
+
+/* neighborhood */
+#place .grid{display:grid;grid-template-columns:5fr 6fr;gap:clamp(32px,6vw,96px);align-items:center}
+#place h2{font-size:clamp(2.2rem,4.2vw,3.6rem);margin:16px 0 22px}
+#place .pic{aspect-ratio:3/2;overflow:hidden;background:#000}
+#place .pic img{width:100%;height:100%;object-fit:cover}
+#place dl{display:grid;grid-template-columns:1fr auto;gap:12px 24px;margin-top:28px;border-top:1px solid var(--rule);padding-top:24px;font-size:1.1rem}
+#place dt{color:var(--ivory-2)}
+#place dd{color:#fff;font-weight:500;text-align:end}
+@media(max-width:860px){#place .grid{grid-template-columns:1fr}}
+
+/* credentials */
+#who{background:var(--night-2)}
+#who .grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,80px)}
+#who h3{font-size:1.9rem;margin:12px 0 12px;font-weight:400}
+#who p{font-size:1.1rem}
+@media(max-width:760px){#who .grid{grid-template-columns:1fr}}
+
+/* contact */
+#contact .grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,88px);align-items:start}
+#contact h2{font-size:clamp(2.4rem,4.6vw,4rem);margin:16px 0 22px}
+#contact .person{margin-top:32px;padding-top:26px;border-top:1px solid var(--rule)}
+#contact .person b{display:block;font-family:var(--serif);font-size:1.8rem;font-weight:400;color:#fff}
+#contact .person span{display:block;font-size:.92rem;letter-spacing:var(--track-s);text-transform:var(--caps);color:var(--mute);margin:6px 0 18px}
+#contact .phone{font-family:"Cormorant Garamond",var(--serif);font-size:2rem;color:#fff;font-variant-numeric:tabular-nums;display:inline-block;letter-spacing:.03em}
+#contact .ways{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+#contact form{border:1px solid var(--rule);padding:clamp(24px,3vw,40px);background:var(--panel);display:grid;gap:20px}
+#contact label{display:grid;gap:10px;font-size:.82rem;letter-spacing:var(--track-s);text-transform:var(--caps);color:var(--ivory-2);font-weight:600}
+html[lang="he"] #contact label{font-size:.98rem}
+#contact input,#contact textarea{width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(246,241,231,.25);padding:14px 16px;font:inherit;font-size:1.1rem;color:#fff;outline:0;border-radius:0}
+#contact input:focus,#contact textarea:focus{border-color:var(--gold)}
+#contact textarea{min-height:96px;resize:vertical}
+#contact .consent{font-size:.95rem;color:var(--mute);line-height:1.5}
+#contact .ok{display:none;padding:36px;border:1px solid var(--gold);font-family:var(--serif);font-size:1.5rem;text-align:center;color:#fff}
+@media(max-width:860px){#contact .grid{grid-template-columns:1fr}}
+
+footer{position:relative;z-index:2;padding:36px var(--gutter) calc(40px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--rule);font-size:.92rem;color:var(--mute);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;background:var(--night)}
+footer b{font-family:var(--serif);font-weight:400;font-size:1.15rem;color:#fff;letter-spacing:.04em}
+
+.rv{opacity:0;transform:translateY(20px);transition:1s cubic-bezier(.2,.7,.2,1)}
+.rv.on{opacity:1;transform:none}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <a class="brand" href="#top"><img src="img/logo.webp" alt="6 Yam Suf"><span><b data-i18n="brand">6 Yam Suf</b><small data-i18n="brand_sub">Ramat Eshkol · Jerusalem</small></span></a>
+  <div class="right">
+    <a class="cta" href="#contact" data-i18n="cta_nav">Arrange a Private Viewing</a>
+    <button class="lang" id="langbtn" type="button" aria-label="Switch language">עברית</button>
+  </div>
+</nav>
+
+<!-- ===== FILM: stacked chapters ===== -->
+<div id="film">
+
+  <header class="chapter" id="top">
+    <video class="bg" id="herovid" autoplay muted loop playsinline preload="auto" poster="img/hero-poster.jpg" aria-hidden="true"><source src="img/hero.mp4" type="video/mp4"></video>
+    <div class="scrim"></div>
+    <div class="inner">
+      <div>
+        <div class="kicker" data-i18n="h_kicker">The Penthouse · 6 Yam Suf · Ramat Eshkol</div>
+        <h1 data-i18n="h_title">Above Yerushalayim.</h1>
+        <p data-i18n="h_text">Penthouse 27 is the last residence on the top floor of 6 Yam Suf: 2,067 sq ft on one level, a 592 sq ft sukkah terrace, six bedrooms, and an open view of the city.</p>
+        <div class="cta-row"><a class="btn" href="#contact" data-i18n="cta_view">Arrange a Private Viewing</a><a class="btn" href="#tour" data-i18n="cta_tour">Walk Through in 3D</a></div>
+      </div>
+      <div class="facts" data-i18n="h_facts"></div>
+    </div>
+    <div class="scroll" data-i18n="scroll">Scroll</div>
+  </header>
+
+  <section class="chapter">
+    <img class="bg" src="img/street.jpg" alt="" loading="lazy">
+    <div class="scrim"></div>
+    <div class="idx">I</div>
+    <div class="inner"><div>
+      <div class="kicker" data-i18n="c1_k">The Arrival</div>
+      <h2 data-i18n="c1_t">A quiet street in Ramat Eshkol</h2>
+      <p data-i18n="c1_p"></p>
+    </div></div>
+  </section>
+
+  <section class="chapter">
+    <img class="bg" src="img/building.jpg" alt="" loading="lazy" style="object-position:60% 35%">
+    <div class="scrim"></div>
+    <div class="idx">II</div>
+    <div class="inner"><div>
+      <div class="kicker" data-i18n="c2_k">The Building</div>
+      <h2 data-i18n="c2_t">Twenty-eight residences,<br>Jerusalem stone</h2>
+      <p data-i18n="c2_p"></p>
+    </div></div>
+  </section>
+
+  <section class="chapter">
+    <img class="bg" src="img/living2.webp" alt="" loading="lazy">
+    <div class="scrim"></div>
+    <div class="idx">III</div>
+    <div class="inner">
+      <div>
+        <div class="kicker" data-i18n="c3_k">Living Spaces</div>
+        <h2 data-i18n="c3_t">Room for a Shabbos table of fourteen</h2>
+        <p data-i18n="c3_p"></p>
+      </div>
+      <div class="facts" data-i18n="c3_facts"></div>
+    </div>
+  </section>
+
+  <section class="chapter">
+    <img class="bg" src="img/tour-cover.webp" alt="" loading="lazy" style="object-position:70% 50%">
+    <div class="scrim"></div>
+    <div class="idx">IV</div>
+    <div class="inner"><div>
+      <div class="kicker" data-i18n="c4_k">The Sukkah Terrace</div>
+      <h2 data-i18n="c4_t">592 square feet,<br>open to the sky</h2>
+      <p data-i18n="c4_p"></p>
+    </div></div>
+  </section>
+
+  <section class="chapter">
+    <img class="bg" src="img/living1.webp" alt="" loading="lazy">
+    <div class="scrim"></div>
+    <div class="idx">V</div>
+    <div class="inner">
+      <div>
+        <div class="kicker" data-i18n="c5_k">Inner Sanctum</div>
+        <h2 data-i18n="c5_t">Six bedrooms,<br>every one with a window</h2>
+        <p data-i18n="c5_p"></p>
+      </div>
+      <div class="facts" data-i18n="c5_facts"></div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ===== DOSSIER ===== -->
+<div id="price">
+  <div class="wrap row">
+    <div class="amount"><small data-i18n="price_l">Price</small><bdi>₪ 11,600,000</bdi></div>
+    <ul data-i18n="price_list"></ul>
+  </div>
+</div>
+
+<section id="plan" class="block">
+  <div class="wrap grid">
+    <div class="board rv" id="board">
+      <img src="img/plan-6rooms.webp" alt="Floor plan">
+      <div class="cap" data-i18n="plan_cap">Floor plan · 6-bedroom penthouse · 7th floor · for illustration</div>
+    </div>
+    <div class="rv">
+      <div class="kicker rule" data-i18n="plan_k">Specifications</div>
+      <h2 data-i18n="plan_t">The facts</h2>
+      <table data-i18n="plan_table"></table>
+      <p class="note" data-i18n="plan_note"></p>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="block">
+  <div class="wrap">
+    <div class="rv"><div class="kicker rule" data-i18n="gal_k">Renderings</div></div>
+    <div class="grid">
+      <figure class="rv"><img src="img/living2.webp" alt="" loading="lazy"><figcaption data-i18n="g1">Living room, wall of glass to the terrace</figcaption></figure>
+      <figure class="rv"><img src="img/dining.webp" alt="" loading="lazy"><figcaption data-i18n="g2">Dining area</figcaption></figure>
+      <figure class="rv"><img src="img/kitchen.webp" alt="" loading="lazy"><figcaption data-i18n="g3">Kitchen with center island</figcaption></figure>
+      <figure class="rv"><img src="img/living1.webp" alt="" loading="lazy"><figcaption data-i18n="g4">Sitting area</figcaption></figure>
+      <figure class="rv"><img src="img/living3.webp" alt="" loading="lazy"><figcaption data-i18n="g5">Living space</figcaption></figure>
+      <figure class="rv"><img src="img/building.jpg" alt="" loading="lazy"><figcaption data-i18n="g6">6 Yam Suf</figcaption></figure>
+    </div>
+  </div>
+</section>
+<div id="lightbox"><img alt=""></div>
+
+<section id="tour" class="block">
+  <div class="card" id="opentour">
+    <div class="inner">
+      <svg class="play" viewBox="0 0 96 96" aria-hidden="true"><circle cx="48" cy="48" r="46" fill="rgba(11,13,18,.45)" stroke="#fff" stroke-width="1.5"/><polygon points="40,32 64,48 40,64" fill="#fff"/></svg>
+      <div class="kicker" data-i18n="tour_k">Virtual tour</div>
+      <h2 data-i18n="tour_t">Walk through Penthouse 27 now</h2>
+      <p data-i18n="tour_p"></p>
+    </div>
+  </div>
+  <div class="alt" data-i18n="tour_alt"></div>
+</section>
+<div id="tourmodal" role="dialog" aria-label="Virtual tour">
+  <button class="close" id="closetour" aria-label="Close">✕</button>
+  <div class="tag" data-i18n="tour_tag">Penthouse 27 · 3D tour</div>
+</div>
+
+<section id="place" class="block">
+  <div class="wrap grid">
+    <div class="rv">
+      <div class="kicker rule" data-i18n="pl_k">The Neighborhood</div>
+      <h2 data-i18n="pl_t">Ramat Eshkol</h2>
+      <p data-i18n="pl_p"></p>
+      <dl data-i18n="pl_dl"></dl>
+    </div>
+    <div class="pic rv"><img src="img/street.jpg" alt="" loading="lazy"></div>
+  </div>
+</section>
+
+<section id="who" class="block">
+  <div class="wrap grid">
+    <div class="rv">
+      <div class="kicker rule" data-i18n="dev_k">The Developer</div>
+      <h3 data-i18n="dev_t">Safrin</h3>
+      <p data-i18n="dev_p"></p>
+    </div>
+    <div class="rv">
+      <div class="kicker rule" data-i18n="arc_k">The Architect</div>
+      <h3 data-i18n="arc_t">RS Architects</h3>
+      <p data-i18n="arc_p"></p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="block">
+  <div class="wrap grid">
+    <div class="rv">
+      <div class="kicker rule" data-i18n="ct_k">Welcome</div>
+      <h2 data-i18n="ct_t">See the view from the seventh floor</h2>
+      <p data-i18n="ct_p"></p>
+      <div class="person">
+        <b data-i18n="ct_name">Yoni Shor</b>
+        <span data-i18n="ct_role">Safrin · Sales</span>
+        <a class="phone tel" href="#"><bdi dir="ltr">+972 50-667-4560</bdi></a>
+        <div class="ways">
+          <a class="btn solid wa" href="#" target="_blank" rel="noopener" data-i18n="ct_wa">WhatsApp</a>
+          <a class="btn tel" href="#" data-i18n="ct_call">Call</a>
+        </div>
+      </div>
+    </div>
+    <div class="rv">
+      <form id="form">
+        <label><span data-i18n="f_name">Full name</span><input name="name" id="f-name" required autocomplete="name"></label>
+        <label><span data-i18n="f_phone">Phone or WhatsApp</span><input name="phone" id="f-phone" type="tel" required autocomplete="tel" inputmode="tel" data-i18n-ph="f_phone_ph"></label>
+        <label><span data-i18n="f_when">When suits you</span><textarea name="msg" id="f-msg" data-i18n-ph="f_when_ph"></textarea></label>
+        <button class="btn solid" type="submit" data-i18n="cta_view2">Arrange a Private Viewing</button>
+        <div class="consent" data-i18n="f_consent"></div>
+      </form>
+      <div class="ok" id="ok" data-i18n="f_ok">Thank you. We will be in touch shortly.</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <b data-i18n="ft_b">Safrin · 6 Yam Suf</b>
+  <span data-i18n="ft_s">Ramat Eshkol, Jerusalem · Renderings and plans for illustration only · E&amp;OE</span>
+</footer>
+
+<script>
+/* ======== CONTACT — edit here ======== */
+const CONTACT = { whatsapp: "972506674560" };
+
+/* ======== COPY — English / Hebrew ======== */
+const T = {
+en: {
+  title:"Penthouse 27 · 6 Yam Suf",
+  brand:"6 Yam Suf", brand_sub:"Ramat Eshkol · Jerusalem", cta_nav:"Arrange a Private Viewing", lang_btn:"עברית",
+  h_kicker:"The Penthouse · 6 Yam Suf · Ramat Eshkol", h_title:"Above Yerushalayim.",
+  h_text:"Penthouse 27 is the last residence on the top floor of 6 Yam Suf: 2,067 sq ft on one level, a 592 sq ft sukkah terrace, six bedrooms, and an open view of the city.",
+  cta_view:"Arrange a Private Viewing", cta_view2:"Arrange a Private Viewing", cta_tour:"Walk Through in 3D", scroll:"Scroll",
+  h_facts:`<div><b>2,067</b><span>sq ft</span><i>192 m²</i></div><div><b>592</b><span>sq ft sukkah terrace</span><i>55 m²</i></div><div><b>7th</b><span>top floor</span><i>Shabbos elevator</i></div>`,
+  c1_k:"The Arrival", c1_t:"A quiet street in Ramat Eshkol",
+  c1_p:"Ramat Eshkol is one of Jerusalem's most established Anglo and chareidi neighborhoods: stone buildings, shuls and kollelim within a short walk, the light rail at Ammunition Hill, and the Old City about ten minutes away by car. Yam Suf is an inner, residential street, away from through traffic.",
+  c2_k:"The Building", c2_t:"Twenty-eight residences,<br>Jerusalem stone",
+  c2_p:"A boutique building of 28 apartments by Safrin, designed by RS Architects. A landscaped garden surrounds the building; a designed lobby and a Shabbos elevator take you from the sidewalk to your front door. The penthouses occupy the seventh and top floor.",
+  c3_k:"Living Spaces", c3_t:"Room for a Shabbos table of fourteen",
+  c3_p:"About 540 sq ft of open living and dining space behind a wall of glass that slides fully open to the terrace. Underfloor heating throughout, high ceilings, and a kitchen with a center island planned to be fitted as a full kosher kitchen.",
+  c3_facts:`<div><b>540</b><span>sq ft living</span><i>≈ 50 m²</i></div><div><b>161</b><span>sq ft storage room</span><i>15 m²</i></div>`,
+  c4_k:"The Sukkah Terrace", c4_t:"592 square feet,<br>open to the sky",
+  c4_p:"The terrace runs off both the living room and the dining area, so on Sukkos the home simply continues outside: room for a long table under the schach and a seating area beside it. The rest of the year it is a private courtyard in the air, seven floors above the city.",
+  c5_k:"Inner Sanctum", c5_t:"Six bedrooms,<br>every one with a window",
+  c5_p:"A master suite with its own bathroom, four further bedrooms and two more bathrooms, plus a guest washroom and a laundry room. The bedroom wing is set apart from the entertaining space, so guests in the living room never disturb sleeping children.",
+  c5_facts:`<div><b>6</b><span>bedrooms</span></div><div><b>3</b><span>bathrooms</span><i>+ guest WC</i></div>`,
+  price_l:"Price",
+  price_list:`<li><b>Sold directly</b> by the developer</li><li><b>6</b> bedrooms</li><li><b>2,067</b> sq ft interior</li><li><b>592</b> sq ft sukkah terrace</li><li><b>161</b> sq ft storage</li>`,
+  plan_cap:"Floor plan · 6-bedroom penthouse · 7th floor · for illustration", plan_k:"Specifications", plan_t:"The facts",
+  plan_table:`<tr><th>Residence</th><td>Penthouse 27</td></tr><tr><th>Floor</th><td>7th and top floor</td></tr><tr><th>Interior</th><td>192 m² · 2,067 sq ft</td></tr><tr><th>Sukkah terrace</th><td>55 m² · 592 sq ft, open to the sky</td></tr><tr><th>Storage room</th><td>15 m² · 161 sq ft</td></tr><tr><th>Bedrooms</th><td>6 · master suite + 4</td></tr><tr><th>Bathrooms</th><td>3 + guest washroom</td></tr><tr><th>Elevator</th><td>Shabbos elevator, sidewalk to door</td></tr><tr><th>Heating</th><td>Underfloor</td></tr><tr><th>Building</th><td>28 residences · lobby · garden</td></tr><tr><th>Architect</th><td>RS Architects, Jerusalem</td></tr><tr><th>Price</th><td><bdi>₪ 11,600,000</bdi></td></tr>`,
+  plan_note:"Plan and renderings are for illustration. Binding dimensions and finishes are those in the sales specification and the contract drawings.",
+  gal_k:"Renderings", g1:"Living room, wall of glass to the terrace", g2:"Dining area", g3:"Kitchen with center island", g4:"Sitting area", g5:"Living space", g6:"6 Yam Suf",
+  tour_k:"Virtual tour", tour_t:"Walk through Penthouse 27 now",
+  tour_p:"A full 3D tour of the finished penthouse, opened full screen. Drag to look around; click the floor to move from room to room.",
+  tour_alt:`Tour not opening? <a href="https://my.treedis.com/tour/a-27" target="_blank" rel="noopener">Open it in a new window</a>`, tour_tag:"Penthouse 27 · 3D tour",
+  pl_k:"The Neighborhood", pl_t:"Ramat Eshkol",
+  pl_p:"A settled, family neighborhood in north Jerusalem with a large English-speaking chareidi community. Shuls, kollelim, schools and shopping are within walking distance; the light rail connects you to the city center and the Kotel without a car.",
+  pl_dl:`<dt>Light rail (Ammunition Hill)</dt><dd>Walking distance</dd><dt>Old City and the Kotel</dt><dd>About 10 min by car</dd><dt>Mount Scopus, Hadassah</dt><dd>A few minutes</dd><dt>City center</dt><dd>About 10 min</dd>`,
+  dev_k:"The Developer", dev_t:"Safrin",
+  dev_p:"The Safrin family's development company builds urban-renewal projects across Jerusalem: 6 Yam Suf, 19 Paran, 5 Mevo Livne, 9 Zecharia HaRofeh and 4 Etzion Gever. Penthouse 27 is sold directly by the developer.",
+  arc_k:"The Architect", arc_t:"RS Architects",
+  arc_p:"A Jerusalem architecture and interior-design practice founded in 2012, with dozens of projects and more than 2,500 apartments to its name, including work for Israel's largest builders. RS designed 6 Yam Suf in full, interiors included.",
+  ct_k:"Welcome", ct_t:"See the view from the seventh floor",
+  ct_p:"A private viewing at the apartment, or a call to walk through the plans, the specification and the timeline. Buyers from abroad are welcome to begin by video call.",
+  ct_name:"Yoni Shor", ct_role:"Safrin · Sales", ct_wa:"WhatsApp", ct_call:"Call",
+  f_name:"Full name", f_phone:"Phone or WhatsApp", f_phone_ph:"+1 …", f_when:"When suits you", f_when_ph:"e.g. Tuesday afternoon Israel time, or a video call this week",
+  f_consent:"Your details go to Yoni Shor on WhatsApp and are used only to arrange the viewing.", f_ok:"Thank you. We will be in touch shortly.", f_ready:"Your message is ready. Tap to send it to Yoni on WhatsApp.", f_send:"Send on WhatsApp",
+  ft_b:"Safrin · 6 Yam Suf", ft_s:"Ramat Eshkol, Jerusalem · Renderings and plans for illustration only · E&amp;OE",
+  wa:"Hello Yoni, I would like to arrange a private viewing of Penthouse 27 at 6 Yam Suf.",
+  wa_form:(n,p,m)=>`Hello Yoni, this is ${n} (${p}). I would like to arrange a private viewing of Penthouse 27 at 6 Yam Suf. ${m}`
+},
+he: {
+  title:"פנטהאוז 27 · ים סוף 6",
+  brand:"ים סוף 6", brand_sub:"רמת אשכול · ירושלים", cta_nav:"לתיאום פגישה אישית", lang_btn:"English",
+  h_kicker:"הפנטהאוז · ים סוף 6 · רמת אשכול", h_title:"מעל ירושלים.",
+  h_text:"פנטהאוז 27 הוא הדירה האחרונה בקומה העליונה של ים סוף 6: 192 מ״ר במפלס אחד, מרפסת סוכה של 55 מ״ר, שישה חדרים ונוף פתוח אל העיר.",
+  cta_view:"לתיאום פגישה אישית", cta_view2:"לתיאום פגישה אישית", cta_tour:"סיור תלת־ממדי", scroll:"גללו",
+  h_facts:`<div><b>192</b><span>מ״ר</span><i>2,067 sq ft</i></div><div><b>55</b><span>מ״ר מרפסת סוכה</span><i>592 sq ft</i></div><div><b>7</b><span>קומה אחרונה</span><i>מעלית שבת</i></div>`,
+  c1_k:"ההגעה", c1_t:"רחוב שקט ברמת אשכול",
+  c1_p:"רמת אשכול היא מהשכונות החרדיות והאנגלו־סקסיות הוותיקות והמבוססות בירושלים: בנייני אבן, בתי כנסת וכוללים במרחק הליכה, הרכבת הקלה בגבעת התחמושת, והעיר העתיקה כעשר דקות נסיעה. רחוב ים סוף הוא רחוב פנימי ושקט, מחוץ לתנועה העוברת.",
+  c2_k:"הבניין", c2_t:"עשרים ושמונה דירות,<br>אבן ירושלמית",
+  c2_p:"בניין בוטיק של 28 דירות מבית ספרין יזמות, בתכנון RS אדריכלות. גינה מטופחת מקיפה את הבניין; לובי מעוצב ומעלית שבת מביאים אתכם מהמדרכה עד דלת הכניסה. הפנטהאוזים בקומה השביעית והאחרונה.",
+  c3_k:"חללי המגורים", c3_t:"מקום לשולחן שבת של ארבעה־עשר",
+  c3_p:"כ־50 מ״ר של סלון ופינת אוכל פתוחים, מול קיר ויטרינות שנפתח במלואו אל המרפסת. חימום תת־רצפתי בכל הדירה, תקרות גבוהות, ומטבח עם אי מרכזי שמתוכנן כמטבח כשר מלא.",
+  c3_facts:`<div><b>50</b><span>מ״ר סלון ואוכל</span><i>≈ 540 sq ft</i></div><div><b>15</b><span>מ״ר מחסן צמוד</span><i>161 sq ft</i></div>`,
+  c4_k:"מרפסת הסוכה", c4_t:"55 מ״ר,<br>פתוחים לשמיים",
+  c4_p:"המרפסת יוצאת מהסלון ומפינת האוכל יחד, כך שבסוכות הבית פשוט ממשיך החוצה: מקום לשולחן ארוך תחת הסכך ולפינת ישיבה לצדו. בשאר השנה היא חצר פרטית באוויר, שבע קומות מעל העיר.",
+  c5_k:"האגף הפרטי", c5_t:"שישה חדרים,<br>כולם עם חלון",
+  c5_p:"סוויטת הורים עם חדר רחצה צמוד, ארבעה חדרי שינה נוספים ושני חדרי רחצה, וכן שירותי אורחים וחדר כביסה. אגף השינה מופרד מחלל האירוח, כך שאורחים בסלון לא מעירים ילדים ישנים.",
+  c5_facts:`<div><b>6</b><span>חדרים</span></div><div><b>3</b><span>חדרי רחצה</span><i>+ שירותי אורחים</i></div>`,
+  price_l:"מחיר",
+  price_list:`<li><b>נמכרת ישירות</b> מהיזם</li><li><b>6</b> חדרים</li><li><b>192</b> מ״ר בנוי</li><li><b>55</b> מ״ר מרפסת סוכה</li><li><b>15</b> מ״ר מחסן</li>`,
+  plan_cap:"תכנית · פנטהאוז 6 חדרים · קומה 7 · להמחשה", plan_k:"מפרט", plan_t:"הנתונים",
+  plan_table:`<tr><th>דירה</th><td>פנטהאוז 27</td></tr><tr><th>קומה</th><td>7 ואחרונה</td></tr><tr><th>שטח דירה</th><td>192 מ״ר · 2,067 sq ft</td></tr><tr><th>מרפסת סוכה</th><td>55 מ״ר · פתוחה לשמיים</td></tr><tr><th>מחסן</th><td>15 מ״ר, צמוד</td></tr><tr><th>חדרים</th><td>6 · סוויטת הורים + 4</td></tr><tr><th>חדרי רחצה</th><td>3 + שירותי אורחים</td></tr><tr><th>מעלית</th><td>מעלית שבת, מהמדרכה עד הדלת</td></tr><tr><th>חימום</th><td>תת־רצפתי</td></tr><tr><th>הבניין</th><td>28 דירות · לובי · גינה היקפית</td></tr><tr><th>אדריכלות</th><td>RS אדריכלות, ירושלים</td></tr><tr><th>מחיר</th><td><bdi>₪ 11,600,000</bdi></td></tr>`,
+  plan_note:"התכנית וההדמיות להמחשה בלבד. המידות והמפרט המחייבים מופיעים במפרט המכר ובתכניות המצורפות לחוזה.",
+  gal_k:"הדמיות", g1:"הסלון, קיר ויטרינות אל המרפסת", g2:"פינת האוכל", g3:"מטבח עם אי מרכזי", g4:"פינת ישיבה", g5:"חלל המגורים", g6:"ים סוף 6",
+  tour_k:"סיור וירטואלי", tour_t:"להסתובב בפנטהאוז 27, עכשיו",
+  tour_p:"סיור תלת־ממדי מלא בהדמיית הפנטהאוז, במסך מלא. גוררים כדי להביט סביב ולוחצים על הרצפה כדי לעבור מחדר לחדר.",
+  tour_alt:`הסיור לא נפתח? <a href="https://my.treedis.com/tour/a-27" target="_blank" rel="noopener">פתחו אותו בחלון חדש</a>`, tour_tag:"פנטהאוז 27 · סיור תלת־ממדי",
+  pl_k:"השכונה", pl_t:"רמת אשכול",
+  pl_p:"שכונה משפחתית ומבוססת בצפון ירושלים, עם קהילה חרדית דוברת אנגלית גדולה. בתי כנסת, כוללים, מוסדות חינוך וקניות במרחק הליכה; הרכבת הקלה מחברת למרכז העיר ולכותל בלי רכב.",
+  pl_dl:`<dt>הרכבת הקלה (גבעת התחמושת)</dt><dd>מרחק הליכה</dd><dt>העיר העתיקה והכותל</dt><dd>כ־10 דקות נסיעה</dd><dt>הר הצופים, הדסה</dt><dd>דקות ספורות</dd><dt>מרכז העיר</dt><dd>כ־10 דקות</dd>`,
+  dev_k:"היזם", dev_t:"ספרין יזמות",
+  dev_p:"חברת היזמות של משפחת ספרין מקדמת פרויקטים של התחדשות עירונית ברחבי ירושלים: ים סוף 6, פארן 19, מבוא ליבנה 5, זכריה הרופא 9 ועציון גבר 4. פנטהאוז 27 נמכר ישירות מהיזם.",
+  arc_k:"האדריכל", arc_t:"RS אדריכלות",
+  arc_p:"משרד אדריכלות ועיצוב פנים ירושלמי שפועל משנת 2012, עם עשרות פרויקטים ולמעלה מ־2,500 יחידות דיור, בין היתר עבור חברות הבנייה הגדולות בארץ. RS תכנן את ים סוף 6 כולו, כולל פנים הדירות.",
+  ct_k:"ברוכים הבאים", ct_t:"לראות את הנוף מהקומה השביעית",
+  ct_p:"פגישה אישית בדירה, או שיחה שעוברת על התכניות, המפרט ולוח הזמנים. קונים מחו״ל מוזמנים להתחיל בשיחת וידאו.",
+  ct_name:"יוני שור", ct_role:"ספרין יזמות · מכירות", ct_wa:"וואטסאפ", ct_call:"שיחה",
+  f_name:"שם מלא", f_phone:"טלפון או וואטסאפ", f_phone_ph:"050-…", f_when:"מתי נוח לכם", f_when_ph:"למשל: יום שלישי אחר הצהריים, או שיחת וידאו השבוע",
+  f_consent:"הפרטים נשלחים ליוני שור בוואטסאפ ומשמשים לתיאום הביקור בלבד.", f_ok:"תודה. נחזור אליכם בהקדם.", f_ready:"ההודעה מוכנה. לחצו כדי לשלוח אותה ליוני בוואטסאפ.", f_send:"שליחה בוואטסאפ",
+  ft_b:"ספרין יזמות · ים סוף 6", ft_s:"רמת אשכול, ירושלים · ההדמיות והתכניות להמחשה בלבד · ט.ל.ח",
+  wa:"שלום יוני, אשמח לתאם פגישה אישית לצפייה בפנטהאוז 27 בים סוף 6.",
+  wa_form:(n,p,m)=>`שלום יוני, אני ${n} (${p}). אשמח לתאם פגישה לצפייה בפנטהאוז 27 בים סוף 6. ${m}`
+}};
+
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+let lang='en';
+function setLang(l){
+  lang=T[l]?l:'en'; const t=T[lang];
+  document.documentElement.lang=lang; document.documentElement.dir=lang==='he'?'rtl':'ltr';
+  document.title=t.title;
+  $$('[data-i18n]').forEach(el=>{const v=t[el.dataset.i18n]; if(v!==undefined) el.innerHTML=v});
+  $$('[data-i18n-ph]').forEach(el=>{el.placeholder=t[el.dataset.i18nPh]||''});
+  $('#langbtn').textContent=t.lang_btn;
+  $$('a.wa').forEach(a=>a.href=`https://wa.me/${CONTACT.whatsapp}?text=${encodeURIComponent(t.wa)}`);
+  $$('a.tel').forEach(a=>a.href=`tel:+${CONTACT.whatsapp}`);
+  try{localStorage.setItem('lang',lang)}catch(e){}
+  const u=new URL(location); u.searchParams.set('lang',lang); history.replaceState(null,'',u);
+}
+(function(){
+  let l=new URLSearchParams(location.search).get('lang');
+  if(!l){try{l=localStorage.getItem('lang')}catch(e){}}
+  if(!l){l=(navigator.language||'').toLowerCase().startsWith('he')?'he':'en'}
+  setLang(l);
+})();
+$('#langbtn').addEventListener('click',()=>setLang(lang==='en'?'he':'en'));
+
+/* reveal + nav */
+const nav=$('#nav');
+let ticking=false, pending=$$('.rv, .chapter');
+function reveal(){
+  const h=innerHeight;
+  pending=pending.filter(el=>{const r=el.getBoundingClientRect(); if(r.top<h*.92&&r.bottom>0){el.classList.add('on');return false} return true});
+}
+const heroVid=$('#herovid'), heroScrim=$('#top .scrim');
+function onScroll(){
+  const p=Math.min(1,scrollY/(innerHeight*.9));
+  heroVid.style.opacity=heroScrim.style.opacity=String(1-p*.9);
+  if(p>=1&&!heroVid.paused){heroVid.pause()} else if(p<1&&heroVid.paused){heroVid.play().catch(()=>{})}
+  nav.classList.toggle('solid',scrollY>innerHeight*.6); reveal(); ticking=false}
+addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(onScroll);ticking=true}},{passive:true});
+addEventListener('resize',reveal); addEventListener('load',reveal);
+onScroll(); setTimeout(reveal,600);
+
+/* lightbox */
+const lb=$('#lightbox'), lbimg=lb.querySelector('img');
+$$('#gallery figure, #board').forEach(f=>f.addEventListener('click',()=>{lbimg.src=f.querySelector('img').src;lb.classList.add('on')}));
+lb.addEventListener('click',()=>lb.classList.remove('on'));
+
+/* tour overlay */
+const modal=$('#tourmodal');
+function openTour(){
+  if(!modal.querySelector('iframe')){
+    const i=document.createElement('iframe');
+    i.src='https://my.treedis.com/tour/a-27'; i.allow='fullscreen; xr-spatial-tracking; gyroscope; accelerometer'; i.allowFullscreen=true;
+    modal.appendChild(i);
+  }
+  modal.classList.add('on'); document.body.classList.add('lock');
+}
+function closeTour(){modal.classList.remove('on'); document.body.classList.remove('lock')}
+$('#opentour').addEventListener('click',openTour);
+$('#closetour').addEventListener('click',closeTour);
+addEventListener('keydown',e=>{if(e.key==='Escape'){closeTour();lb.classList.remove('on')}});
+
+/* form -> WhatsApp */
+$('#form').addEventListener('submit',e=>{
+  e.preventDefault();
+  const d=new FormData(e.target);
+  const txt=T[lang].wa_form(d.get('name'),d.get('phone'),d.get('msg')||'').trim();
+  const url=`https://wa.me/${CONTACT.whatsapp}?text=${encodeURIComponent(txt)}`;
+  const ok=$('#ok'); ok.innerHTML=`<p style="color:#fff;margin:0 auto 20px">${T[lang].f_ready}</p><a class="btn solid" href="${url}" target="_blank" rel="noopener">${T[lang].f_send}</a>`;
+  e.target.style.display='none'; ok.style.display='block';
+});
+</script>
+</body>
+</html>
